@@ -180,5 +180,21 @@ private object bits {
         )
       )
     }
+
+    def hasNotes = {
+      val field = form("hasNotes")
+      tr(
+        th(
+          label(`for` := form3.id(field))(
+            trans.search.hasNotes(),
+            " ",
+            span(cls := "help", title := onlyHasNotes.txt())("(?)")
+          )
+        ),
+        td(cls := "single")(
+          form3.cmnToggle(form3.id(field), field.name, checked = field.value.has("1"), value = "1")
+        )
+      )
+    }
   }
 }

@@ -24,4 +24,6 @@
   <string name="sortBy">Sort by</string>
   <string name="analysis">Analysis</string>
   <string name="onlyAnalysed">Only games where a computer analysis is available</string>
+  <string name="hasNotes">Has notes</string>
+  <string name="onlyHasNotes">Only games where you wrote private notes</string>
 </resources>

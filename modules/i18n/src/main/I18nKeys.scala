@@ -1583,6 +1583,8 @@ val `date` = new I18nKey("search:date")
 val `sortBy` = new I18nKey("search:sortBy")
 val `analysis` = new I18nKey("search:analysis")
 val `onlyAnalysed` = new I18nKey("search:onlyAnalysed")
+val `hasNotes` = new I18nKey("search:hasNotes")
+val `onlyHasNotes` = new I18nKey("search:onlyHasNotes")
 val `searchInXGames` = new I18nKey("search:searchInXGames")
 val `xGamesFound` = new I18nKey("search:xGamesFound")
 }

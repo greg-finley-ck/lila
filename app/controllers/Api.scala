@@ -154,6 +154,7 @@ final class Api(
             rated = getBoolOpt("rated", req),
             playing = getBoolOpt("playing", req),
             analysed = getBoolOpt("analysed", req),
+            hasNotes = getBoolOpt("hasNotes", req),
             withFlags = gameFlagsFromRequest(req),
             nb = nb,
             page = page

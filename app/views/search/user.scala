@@ -50,6 +50,7 @@ object user {
         winnerColor,
         sort,
         analysed,
+        hasNotes,
         tr(cls := "action")(
           th,
           td(button(cls := "button")(search()))

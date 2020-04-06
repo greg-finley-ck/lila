@@ -34,6 +34,7 @@ final private[api] class GameApi(
       rated: Option[Boolean],
       playing: Option[Boolean],
       analysed: Option[Boolean],
+      hasNotes: Option[Boolean],
       withFlags: WithFlags,
       nb: MaxPerPage,
       page: Int
@@ -51,7 +52,7 @@ final private[api] class GameApi(
                 G.analysed -> analysed.map[BSONValue] {
                   case true => BSONBoolean(true)
                   case _    => $doc("$exists" -> false)
-                }
+                },
               )
           } ++ $doc(
             G.rated -> rated.map[BSONValue] {
